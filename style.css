@@ -1,0 +1,50 @@
+css
+/* Общие шрифты и настройки */
+body { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin: 20px; 
+    background-color: #FDF3D6;
+    color: #333; 
+}
+
+/* Стили для шапки */
+header { 
+    margin-bottom: 20px; 
+    background-color: #FEE3EC;
+}
+
+/* Навигационная панель */
+nav { 
+    background: #D3EDC5; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+}
+
+nav a { 
+    margin-right: 10px; 
+    text-decoration: none; 
+    color: #FFBE98; /* Измененный цвет ссылок */
+}
+
+/* Стили для iframe */
+iframe { 
+    display: block; 
+    width: 100%; 
+    height: 200px; 
+    margin-bottom: 20px; 
+    border: none;
+}
+
+/* Настройки таблицы */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    background-color: #C2DAD6;
+}
+
+th, td { 
+    border: 1px solid #9CCFCE; 
+    padding: 8px; 
+    text-align: left; 
+}
