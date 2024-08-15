@@ -3,46 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Birthday site</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        header { margin-bottom: 20px; }
-        nav { background: #eee; padding: 10px; margin-bottom: 20px; }
-        nav a { margin-right: 10px; text-decoration: none; color: #333; }
-        iframe { display: block; width: 100%; height: 200px; margin-bottom: 20px; }
-        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#home">Как все пройдет?</a>
-            <a href="#services">Анкеточка</a>
-            <a href="#contacts">Список подарков</a>
+            <a href="#eventDetails">Как все пройдет?</a>
+            <a href="#formArea">Анкета</a>
+            <a href="#giftList">Список подарков</a>
         </nav>
-        <h1>Даша празднует 20 с небольшим</h1>
+        <h1>Это твое приглашение в мир именниницы на один день</h1>
     </header>
     <section>
-        <p>Это пример параграфа на вашем сайте, содержащий текст, информацию или любую другую необходимую вам информацию.</p>
+        <h2 id="eventDetails">Как все пройдет?</h2>
+        <p>Привет!</p>
+        <p>Если ты видишь этот сайт - значит, ты приглашен разделить со мной мой День Рождения, который пройдет 31 августа.</p>
+        <p>Так уж сложилось, что моя жизнь во многом состоит из спорта и разного рукоделия, чтобы вы ненадолго смогли стать частью этого всего, будет две части праздника:</p>
+        <h3>Мастер-класс</h3>
+        <p>Тут мы сможем немного погрузиться в творчество, при этом поболтать, перекусить и в целом приятно провести время.</p>
+        <h3>Игра в сквош</h3>
+        <p>Без лишних слов: у нас будет два корта, оборудование по надобности и два человека, знающих основы этой прекрасной игры.</p>
     </section>
-    <script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/66bcd2cb50569017d92f8693/?iframe=1" frameborder="0" name="ya-form-66bcd2cb50569017d92f8693" width="650"></iframe>
-    <table>
-        <tr>
-            <th>Столбец 1</th>
-            <th>Столбец 2</th>
-            <th>Столбец 3</th>
-        </tr>
-        <!-- Добавление строк -->
-        <tr><td>1.1</td><td>1.2</td><td>1.3</td></tr>
-        <tr><td>2.1</td><td>2.2</td><td>2.3</td></tr>
-        <tr><td>3.1</td><td>3.2</td><td>3.3</td></tr>
-        <tr><td>4.1</td><td>4.2</td><td>4.3</td></tr>
-        <tr><td>5.1</td><td>5.2</td><td>5.3</td></tr>
-        <tr><td>6.1</td><td>6.2</td><td>6.3</td></tr>
-        <tr><td>7.1</td><td>7.2</td><td>7.3</td></tr>
-        <tr><td>8.1</td><td>8.2</td><td>8.3</td></tr>
-        <tr><td>9.1</td><td>9.2</td><td>9.3</td></tr>
-        <tr><td>10.1</td><td>10.2</td><td>10.3</td></tr>
+    <iframe id="formArea" src="https://forms.yandex.ru/u/66bcd2cb50569017d92f8693/?iframe=1" frameborder="0" name="ya-form-66bcd2cb50569017d92f8693" width="650"></iframe>
+    <table id="giftList">
+        <caption>Список подарков</caption>
+        <tr><td>Подарок 1</td><td>Цена 1</td></tr>
+        <tr><td>Подарок 2</td><td>Цена 2</td></tr>
+        <tr><td>Подарок 3</td><td>Цена 3</td></tr>
+        <tr><td>Подарок 4</td><td>Цена 4</td></tr>
     </table>
 </body>
 </html>
