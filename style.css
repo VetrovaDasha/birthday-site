@@ -1,41 +1,54 @@
 css
-/* Общие шрифты и настройки */
 body { 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif; 
     margin: 20px; 
     background-color: #FDF3D6;
     color: #333; 
 }
 
-/* Стили для шапки */
 header { 
     margin-bottom: 20px; 
     background-color: #FEE3EC;
 }
 
-/* Навигационная панель */
 nav { 
-    background: #D3EDC5; 
-    padding: 10px; 
-    margin-bottom: 20px; 
+    background: #F9B2BC; 
+    padding: 2dvh; 
+    margin-bottom: 20px;
+    align-content: flex-end;
 }
 
 nav a { 
-    margin-right: 10px; 
-    text-decoration: none; 
-    color: #FFBE98; /* Измененный цвет ссылок */
+    font-family: 'Lucida Grande';
+    font-style: bold;
+    margin-right: 30px; 
+    text-decoration: none;
+    padding: 20px; 
+    color: #000000;
 }
 
-/* Стили для iframe */
+h2 {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #F9B2BC;
+}
+
+h3 {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    text-align: left;
+    color: #000000;
+    margin: 10px
+}
+
 iframe { 
     display: block; 
     width: 100%; 
-    height: 200px; 
+    height: 200%; 
     margin-bottom: 20px; 
     border: none;
 }
 
-/* Настройки таблицы */
 table { 
     width: 100%; 
     border-collapse: collapse; 
