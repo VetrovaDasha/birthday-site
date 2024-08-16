@@ -1,35 +1,51 @@
 css
 body {
-    font-family: 'Arial', sans-serif; /* Современный шрифт */
+    font-family: 'Roboto', sans-serif; /* Современный и чистый шрифт */
     line-height: 1.6;
     color: #333;
+    background-color: #ffe4e1; /* светло-розовый фон */
 }
 
 header {
-    background: #f0f0f0;
+    background: #ffcccc; /* Немного другой оттенок розового на заголовке для контраста */
     padding: 20px 0;
     text-align: center;
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 15px;
     color: #333;
     text-decoration: none;
     font-size: 18px;
 }
 
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
 .card {
     background-color: #ffffe0; /* светло-желтый фон */
-    margin: 20px 10px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* тень для карточек */
+    width: 45%; /* ширина карточек, чтобы они были по горизонтали */
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    font-family: 'Caveat', cursive; /* Шрифт напоминающий рукописный */
+    font-size: 18px;
 }
 
 table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* добавление тени к таблице */
 }
 
 table, th, td {
@@ -43,4 +59,18 @@ td, th {
 
 caption h3 {
     margin-bottom: 10px;
+}
+
+#formArea {
+    width: 100%; /* Ширина на весь экран */
+    height: 1000px; /* Высота секции */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 100%; /* Ширина iframe на весь доступный размер */
+    height: 100%; /* Высота iframe на всю высоту секции */
+    border: none;  /* Убрать рамку по умолчанию */
 }
