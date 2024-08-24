@@ -1,10 +1,12 @@
-html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>Dasha's 28's b-day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,32 +14,42 @@ html
         <a href="#applying">Я буду!</a>
         <a href="#presents">Подарки</a>
     </header>
-    <h1>Это твое приглашение</h1>
+    <div class="this">    
+        <h1 class="this">ЭТО</h1>
+    </div>
+    <div class="yours">
+        <h1 class="yours">ТВОЕ</h1>
+    </div>
+    <div class="invitation">
+        <h1 class="invitation">ПРИГЛАШЕНИЕ</h1>
+    </div>
     <p>Раздели со мной этот день</p>
         <div class="header">Дорогие друзья</div>
+        <div class="info">
+            <h2>31 августа и 1 сентября</h2>
+            <p>Я буду рада разделить с вами мои любимые занятия</p>
+        </div>
         <div class="content">
+            <div class="event">
+                <img src="hobby.jpeg" alt="Фото 3">
+                <p>31 августа 17:00</p>
+                <h3>Мастер-классы</h3>
+                <p class="address">Будет чуть позже</p>
+            </div>
             <div class="event" id="events">
-                <img src="path_to_your_image_1.jpg" alt="Фото 1">
-                <p>15:00</p>
+                <img src="squash.webp" alt="Фото 1">
+                <p>1 сентяюря 12:45</p>
                 <h3>Сквош</h3>
-                <p class="address">Спортивный клуб October, г. Москва, ул. Тверская, дом 1</p>
+                <p class="address">Спортивный клуб October, г. Санкт-Петербург, Октябрьская набережная 6В</p>
             </div>
             <div class="event">
-                <img src="path_to_your_image_2.jpg" alt="Фото 2">
-                <p>16:00</p>
+                <img src="squash2.webp" alt="Фото 2">
+                <p>1 сентября 15:00</p>
                 <h3>Таймаут</h3>
-                <p class="address">Немного отдохнем и приведем себя в порядок после игры</p>
-            </div>
-            <div class="event">
-                <img src="path_to_your_image_3.jpg" alt="Фото 3">
-                <p>18:00</p>
-                <h3>Мастер-класс</h3>
-                <p class="address">Лофт Le Bernardin, г. Москва, ул. Тверская, дом 1</p>
+                <p class="address">Немного отдохнем, перекусим и приведем себя в порядок после игры, а также обсудим, кто стал лучшей ракеткой дня</p>
             </div>
         </div>
         <div class="info">
-            <h2>31 августа</h2>
-            <p>Я буду рада разделить с вами мои любимые занятия в этот день.</p>
             <p id="applying">Прошу вас подтвердить своё присутствие!</p>
             <button class="confirmation" onclick="openModal()">Я буду!</button>
             <div id="myModal" class="modal">
