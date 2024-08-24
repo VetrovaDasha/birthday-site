@@ -108,7 +108,7 @@ body {
     color: #6A5ACD;
 }
 .confirmation {
-    background-color: #9400D3;
+    background-color: #ff6c7f;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -187,7 +187,7 @@ div.modal {
 }
 .gift-icon {
     font-size: 48px;
-    color: purple;
+    color: #ff6c7f;
 }
 .gift h3 {
     color: #333;
@@ -197,7 +197,7 @@ div.modal {
     color: #666;
 }
 .gift button {
-    background-color: purple;
+    background-color: #ff6c7f;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -207,7 +207,7 @@ div.modal {
     resize: auto;
 }
 .gift button:hover {
-    background-color: #6a0dad;
+    background-color: #f9b2bc;
 }
 iframe {
     max-width: 100%;
