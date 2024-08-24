@@ -211,7 +211,7 @@ div.modal {
 }
 iframe {
     max-width: 100%;
-    min-width: 200em;
+    min-width: 50em;
     resize: auto;
 }
 img {
