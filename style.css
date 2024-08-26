@@ -47,20 +47,11 @@ h1 {
     font-size: 56px;
     padding: 1%;
 }
-<<<<<<< HEAD
-
-.string {
-=======
 
 .string p {
     text-align: center;
     font-style: italic;
     font-weight: lighter;
-}
-
-div.this, div.invitation {
->>>>>>> 2df9a830c7db6355ac8c479ce5e0d3e7273be1ea
-    display: flex;
 }
 
 div.this, div.invitation {
@@ -82,21 +73,12 @@ h1.yours {
     font-style: italic;
     text-align: left;
 }
-<<<<<<< HEAD
-
-h2 {
-    font-family: 'PT Sans';
-    font-size: 20px;
-    padding: 1%;
-    text-align: center;
-=======
 
 .date h2 {
     font-family: 'PT Sans';
     font-size: 30px;
     padding: 1%;
     text-align: center;
->>>>>>> 2df9a830c7db6355ac8c479ce5e0d3e7273be1ea
 }
 
 @keyframes fadeIn {
@@ -108,27 +90,6 @@ h2 {
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
 }
-<<<<<<< HEAD
-
-.this {
-  animation-delay: 1s;
-}
-
-.yours {
-  animation-delay: 2s;
-}
-
-.invitation {
-  animation-delay: 3s;
-}
-
-
-p, .address {
-    font-size: 24px; /* for .address it was 14px before */
-    margin-top: 20px;
-}
-
-=======
 
 .this {
   animation-delay: 1s;
@@ -149,27 +110,28 @@ p, .address {
     color: #666;
 }
 
->>>>>>> 2df9a830c7db6355ac8c479ce5e0d3e7273be1ea
 .content {
-    display: flex;
+    display: flex; 
     max-width: 1200px;
     margin: 20px auto;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .event {
     font-family: 'PT Sans';
     margin: 20px;
+    display: none; /* By default hide all divs */
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s;
 }
 
 .event img, .photo img .string img{
     max-width: 100%;  
     border-radius: 8px;
 }
-<<<<<<< HEAD
-
-=======
 
 p.event-info {
     font-family: 'PT Sans';
@@ -177,24 +139,16 @@ p.event-info {
     color: #666;
 }
 
->>>>>>> 2df9a830c7db6355ac8c479ce5e0d3e7273be1ea
 .info {
     font-family: 'PT Sans';
     max-width: 500px;
     margin: 20px auto;
 }
-<<<<<<< HEAD
-
-.info h3, .gift h3 {
-    font-family: 'PT Sans';
-    color: #6A5ACD;
-=======
 
 .info h3, .gift h3 {
     font-family: 'PT Sans';
     font-size: 24px;
     color: #000000;
->>>>>>> 2df9a830c7db6355ac8c479ce5e0d3e7273be1ea
 }
 
 #modal {
@@ -236,18 +190,11 @@ p.event-info {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-<<<<<<< HEAD
-    border-radius: 5px;
-}
-
-.confirmation {
-=======
     border-radius: 5px;
     align-items: center;
 }
 
 .confirmation {
->>>>>>> 2df9a830c7db6355ac8c479ce5e0d3e7273be1ea
     margin-top: 20px;
     font-family: 'PT Sans';
 }
@@ -319,13 +266,6 @@ address, .pt-sans-regular, .pt-sans-bold, .pt-sans-regular-italic, .pt-sans-bold
   font-weight: 700;
 }
 
-<<<<<<< HEAD
 .pt-sans-regular-italic, .pt-sans-bold-italic {
   font-style: italic;
 }
-=======
-.pt-sans-regular-italic, .pt-sans-bold-italic {
-  font-style: italic;
-}
-
->>>>>>> 2df9a830c7db6355ac8c479ce5e0d3e7273be1ea
