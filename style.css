@@ -47,6 +47,29 @@ h1.yours {
     font-style: italic;
 }
 
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.this, .yours, .invitation {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.this {
+  animation-delay: 1s;
+}
+
+.yours {
+  animation-delay: 2s;
+}
+
+.invitation {
+  animation-delay: 3s;
+}
+
+
 p, .address {
     font-size: 24px; /* for .address it was 14px before */
     margin-top: 20px;
