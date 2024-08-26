@@ -2,8 +2,8 @@ body {
     font-family: sans-serif, 'PT Sans';
     background-color: #fff;
     color: #000;
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    padding: 0;
 }
 
 header {
@@ -18,6 +18,7 @@ header a {
     color: #363636;
     width: 100%; /* Ensures that header spans the full width */
     background-color: #f9b2bc; /* Set color as #f9b2bc for the header */
+    text-align: center;
     display: flex; /* Make the header a flex container */
     padding: 20px;
     font-size: 24px;
@@ -33,8 +34,8 @@ header #menu {
 header a {
     color: #000; /* black text */
     text-decoration: none; /* Removing underline from link */
-    padding: 20px;
-    transition: all 0.3s ease; /* Added transition for smooth change of color */
+    padding: 10px;
+    transition: all 0.1s ease; /* Added transition for smooth change of color */
 }
 
 header a:hover {
@@ -44,7 +45,11 @@ header a:hover {
 h1 {
     font-family: 'PT Sans';
     font-size: 56px;
-    padding: 5%;
+    padding: 1%;
+}
+
+.string {
+    display: flex;
 }
 
 div.this, div.invitation {
@@ -65,6 +70,13 @@ h1.this, h1.invitation {
 h1.yours {
     font-style: italic;
     text-align: left;
+}
+
+h2 {
+    font-family: 'PT Sans';
+    font-size: 20px;
+    padding: 1%;
+    text-align: center;
 }
 
 @keyframes fadeIn {
@@ -108,7 +120,7 @@ p, .address {
     margin: 20px;
 }
 
-.event img, .photo img {
+.event img, .photo img .string img{
     max-width: 100%;  
     border-radius: 8px;
 }
