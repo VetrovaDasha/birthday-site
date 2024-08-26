@@ -16,10 +16,28 @@ header {
 
 header a {
     color: #363636;
-    text-decoration: none;
-    background-color: #f8f8f8;
+    width: 100%; /* Ensures that header spans the full width */
+    background-color: #f9b2bc; /* Set color as #f9b2bc for the header */
+    display: flex; /* Make the header a flex container */
     padding: 20px;
     font-size: 24px;
+}
+
+header #menu {
+    width: 100%; /* Menu items will occupy the entire width of the header */
+    display: flex; /* List items positioned in a row */
+    justify-content: space-around; /* Equal space between items */
+}
+
+header a {
+    color: #000; /* black text */
+    text-decoration: none; /* Removing underline from link */
+    padding: 20px;
+    transition: all 0.3s ease; /* Added transition for smooth change of color */
+}
+
+header a:hover {
+    color: #808080; /* Text becomes lighter */
 }
 
 h1 {
