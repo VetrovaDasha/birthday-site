@@ -81,12 +81,6 @@ h1.yours {
     text-align: center;
 }
 
-.kitty {
-    display: flexbox;
-    max-width: 100px;
-    max-height: 100px;
-}
-
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
