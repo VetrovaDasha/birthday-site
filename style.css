@@ -1,217 +1,84 @@
 css
 body {
-    font-family: Arial, sans-serif, 'PT Sans';
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    padding: 20px;
+    background-color: #ffffff; /* white */
+    color: #000000; /* black */
 }
 
 header {
-    font-size: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
+    color: #000000; /* black */
 }
 
 header a {
-    color: #363636;
-    text-decoration: none;
-    background-color: #f8f8f8;
-    padding: 20px;
-    font-size: 24px;
+    color: #000000; /* black */
+    background-color: #ffffff; /* white */
 }
 
 h1 {
-    font-family: 'PT Sans';
-    font-size: 48px;
-    margin-top: 100px;
+    color: #000000; /* black */
 }
 
 div.this, div.invitation {
-    display: flex;
-    background-color: #f9b2bc;
+    background-color: #808080; /* grey */
 }
 
 div.yours {
-    display: flex;
-    background-color: #ff6c7f;
-}
-
-h1.this, h1.invitation {
-    font-weight: bold;
-}
-
-h1.yours {
-    font-style: italic;
-}
-
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.this, .yours, .invitation {
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-}
-
-.this {
-  animation-delay: 1s;
-}
-
-.yours {
-  animation-delay: 2s;
-}
-
-.invitation {
-  animation-delay: 3s;
-}
-
-
-p, .address {
-    font-size: 24px; /* for .address it was 14px before */
-    margin-top: 20px;
-}
-
-.content {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.event {
-    margin: 20px;
-}
-
-.event img, .photo img {
-    max-width: 100%;  
-    border-radius: 8px;
-}
-
-.info {
-    max-width: 500px;
-    margin: 20px auto;
-}
-
-.info h3, .gift h3 {
-    color: #6A5ACD;
-}
-
-#modal {
-  display: none; 
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-}
-
-#iframeModal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 2%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.8);
-  animation: animatetop 0.4s;
-}
-
-@keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+    background-color: #808080; /* grey */
 }
 
 .confirmation, .gift button {
-    background-color: #ff6c7f;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #000000; /* black */
+    color: #ffffff; /* white */
 }
 
-.confirmation {
-    margin-top: 20px;
+#gift {
+    border: 1px solid #808080; /* grey */
 }
 
 .close {
-    color: #aaa;
-    font-size: 28px; 
-    font-weight: bold;
+    color: #000000; /* black */
+}
+
+.gifts-container {
+    color: #000000; /* black */
+}
+
+.gift {
+    border: 1px solid #808080; /* grey */
+    color: #000000; /* black */
+}
+
+.gift-icon {
+    color: #000000; /* black */
+}
+
+.gift p {
+    color: #000000; /* black */
+}
+
+.gift button {
+    background-color: #808080; /* grey */
+    color: #ffffff; /* white */
+}
+
+.gift button:hover {
+    background-color: #000000; /* black */
+}
+
+#modal {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#iframeModal {
+    background-color: #ffffff; /* white */
+    border: 1px solid #000000; /* black */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.5);
+}
+
+.info h3, .gift h3 {
+    color: #000000; /* black */
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 1200px;
-    margin: 10px auto;
-    gap: 10px;
-    justify-content: center;
-}
-
-.photo {
-    flex: 1 1 300px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.gifts-container {
-    text-align: center;
-    padding: 20px;
-}
-
-.gift {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.gift-icon {
-    font-size: 48px;
-    color: #ff6c7f;
-}
-
-.gift p {
-    font-size: 14px;
-    color: #666;
-}
-
-.gift button:hover {
-    background-color: #f9b2bc;
-}
-
-address, .pt-sans-regular, .pt-sans-bold, .pt-sans-regular-italic, .pt-sans-bold-italic {
-  font-family: "PT Sans", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.pt-sans-bold, .pt-sans-bold-italic {
-  font-weight: 700;
-}
-
-.pt-sans-regular-italic, .pt-sans-bold-italic {
-  font-style: italic;
+    color: #000000; /* black */
 }
