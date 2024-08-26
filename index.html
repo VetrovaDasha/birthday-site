@@ -3,16 +3,18 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
-    <title>Dasha's 28's b-day</title>
+    <title>Dasha's b-day</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="#events">Как все пройдет?</a>
-        <a href="#applying">Я буду!</a>
-        <a href="#gift">Подарки</a>
+        <div id="menu">
+            <a href="#events">Как все пройдет?</a>
+            <a href="#applying">Я буду!</a>
+            <a href="#gift">Подарки</a>
+        </div>
     </header>
     <div class="this">    
         <h1 class="this">ЭТО</h1>
@@ -22,22 +24,28 @@
     </div>
     <div class="invitation">
         <h1 class="invitation">ПРИГЛАШЕНИЕ</h1>
+    </div class="main">
+    <div class="string">
+        <img src="string2.jpg"alt="Раздели со мной этот день">
     </div>
-    <p>Раздели со мной этот день</p>
-        <div class="header">Дорогие друзья</div>
-        <div class="info">
-            <h2>31 августа и 1 сентября</h2>
-            <p>Я буду рада разделить с вами мои любимые занятия</p>
-        </div>
+    <div class="date">
+        <h2>31 августа и 1 сентября</h2>
+    </div>
+    <div class="string">
+        <img src="string1.jpg"alt="Буду рада">
+    </div>
+    <div class="kitty">
+        <img src="kitty.jpg"alt="Kitty">
+    </div>
         <div class="content">
-            <div class="event">
-                <img src="hobby.jpeg" alt="Фото 3">
+            <div class="event"  id="events">
+                <img src="hobby.jpg" alt="Фото 3">
                 <p>31 августа 17:00</p>
                 <h3>Мастер-классы</h3>
                 <p class="event-info">Соберемся для совместного творчества, ниже будут варианты на выбор</p>
-                <p class="address">Адрес будет чуть позже</p>
+                <p class="address">Адрес определим позже</p>
             </div>
-            <div class="event" id="events">
+            <div class="event">
                 <img src="squash.webp" alt="Фото 1">
                 <p>1 сентября 12:45</p>
                 <h3>Сквош</h3>
@@ -80,16 +88,13 @@
         </div>
         <div class="gallery">
             <div class="photo">
-                <img src="link1.jpg" alt="Фото 1">
+                <img src="photo2.jpg" alt="Фото 1">
             </div>
             <div class="photo">
-                <img src="link2.jpg" alt="Фото 2">
+                <img src="photo2.jpg"Фото 2">
             </div>
             <div class="photo">
-                <img src="link3.jpg" alt="Фото 3">
-            </div>
-            <div class="photo">
-                <img src="link4.jpg" alt="Фото 4">
+                <img src="photo3.jpg" alt="Фото 3">
             </div>
         </div>
         <h2 class="header">Подарки</h2>
@@ -99,12 +104,12 @@
         <div class="gifts-container">
             <div class="gift">
                 <span class="gift-icon">&#x2708;</span>
-                <h3>Наушники Como</h3>
+                <h3><a href=""></a>Наушники Como</h3>
                 <button type="button">Подарить</button>
             </div>
             <div class="gift">
                 <span class="gift-icon">&#x1F4F7;</span>
-                <h3>Шорты спортивные</h3>
+                <h3><a href=""></a>Шорты спортивные</h3>
                 <button type="button">Подарить</button>
             </div>
             <div class="gift" id="gift">
