@@ -39,7 +39,7 @@
             </div>
             <div class="event" id="events">
                 <img src="squash.webp" alt="Фото 1">
-                <p>1 сентяюря 12:45</p>
+                <p>1 сентября 12:45</p>
                 <h3>Сквош</h3>
                 <p class="event-info">Я подготовила два корта, тренера и нужное оборудование, а вы возьмите хорошее настроение и немного знаний про правила сквоша</p>
                 <p class="address">Спортивный клуб October, г. Санкт-Петербург, Октябрьская набережная 6В</p>
@@ -52,13 +52,13 @@
             </div>
         </div>
         <div class="info">
-            <p id="applying">Прошу вас подтвердить своё присутствие до 29.08!</p>
+            <p id="applying">Прошу вас подтвердить своё присутствие!</p>
             <button class="confirmation" onclick="openModal()">Я буду!</button>
-            <div id="myModal" class="modal">
+            <div role="dialog" id="modal" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal()">&times;</span>
                     <script src="https://forms.yandex.ru/_static/embed.js"></script>
-                    <iframe src="https://forms.yandex.ru/u/66bcd2cb50569017d92f8693/?iframe=1" frameborder="0" name="ya-form-66bcd2cb50569017d92f8693"></iframe>
+                    <iframe id="iframeModal" src="https://forms.yandex.ru/u/66bcd2cb50569017d92f8693/?iframe=1" frameborder="0" name="ya-form-66bcd2cb50569017d92f8693"></iframe>
                 </div>
             </div>
             <script>
