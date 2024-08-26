@@ -1,3 +1,4 @@
+css
 body {
     font-family: Arial, sans-serif, 'PT Sans';
     background-color: #fff;
@@ -5,86 +6,52 @@ body {
     text-align: center;
     padding: 20px;
 }
-.pt-sans-regular {
-    font-family: "PT Sans", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .pt-sans-bold {
-    font-family: "PT Sans", system-ui;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .pt-sans-regular-italic {
-    font-family: "PT Sans", system-ui;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .pt-sans-bold-italic {
-    font-family: "PT Sans", system-ui;
-    font-weight: 700;
-    font-style: italic;
-  }  
+
 header {
     font-size: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
-    resize: auto;
 }
+
 header a {
-    font-family: "PT Sans";
     color: #363636;
     text-decoration: none;
     background-color: #f8f8f8;
     padding: 20px;
     font-size: 24px;
-    resize: auto;
 }
+
 h1 {
-    font-variant: normal;
     font-family: 'PT Sans';
     font-size: 48px;
     margin-top: 100px;
-    resize: auto;
 }
-div.this {
+
+div.this, div.invitation {
     display: flex;
     background-color: #f9b2bc;
 }
+
 div.yours {
     display: flex;
     background-color: #ff6c7f;
 }
-div.invitation {
-    display: flex;
-    background-color: #f9b2bc;
+
+h1.this, h1.invitation {
+    font-weight: bold;
 }
-h1.this {
-    font-style: bold;
-}
+
 h1.yours {
     font-style: italic;
 }
-h1.invitation {
-    font-style: bold;
-}
-p {
-    font-size: 24px;
+
+p, .address {
+    font-size: 24px; /* for .address it was 14px before */
     margin-top: 20px;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+
 .content {
     display: flex;
     max-width: 1200px;
@@ -92,23 +59,27 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 .event {
     margin: 20px;
 }
-.event img {
-    width: 300px;
-    height: auto;
+
+.event img, .photo img {
+    max-width: 100%;  
     border-radius: 8px;
 }
+
 .info {
     max-width: 500px;
     margin: 20px auto;
 }
-.info h3 {
+
+.info h3, .gift h3 {
     color: #6A5ACD;
 }
+
 #modal {
-  display: none;
+  display: none; 
   position: fixed;
   z-index: 1;
   left: 0;
@@ -116,7 +87,6 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 }
 
@@ -136,36 +106,35 @@ body {
 
 @keyframes animatetop {
   from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 0}
+  to {top: 0; opacity: 1}
 }
 
-.confirmation {
+.confirmation, .gift button {
     background-color: #ff6c7f;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.confirmation {
     margin-top: 20px;
 }
-.address {
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-}
+
 .close {
     color: #aaa;
-    float: right;
-    font-size: 28px;
+    font-size: 28px; 
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
 }
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -175,20 +144,18 @@ body {
     gap: 10px;
     justify-content: center;
 }
+
 .photo {
     flex: 1 1 300px;
     border-radius: 10px;
     overflow: hidden;
 }
-.photo img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
+
 .gifts-container {
     text-align: center;
     padding: 20px;
 }
+
 .gift {
     display: inline-block;
     width: 30%;
@@ -197,33 +164,31 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .gift-icon {
     font-size: 48px;
     color: #ff6c7f;
 }
-.gift h3 {
-    color: #333;
-}
+
 .gift p {
     font-size: 14px;
     color: #666;
 }
-.gift button {
-    background-color: #ff6c7f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    resize: auto;
-}
+
 .gift button:hover {
     background-color: #f9b2bc;
 }
-img {
-    max-width: 100%;
-    min-width: none;
-    resize: auto;
-    max-height: 200px;
+
+address, .pt-sans-regular, .pt-sans-bold, .pt-sans-regular-italic, .pt-sans-bold-italic {
+  font-family: "PT Sans", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold, .pt-sans-bold-italic {
+  font-weight: 700;
+}
+
+.pt-sans-regular-italic, .pt-sans-bold-italic {
+  font-style: italic;
 }
