@@ -48,8 +48,10 @@ h1 {
     padding: 1%;
 }
 
-.string {
-    display: flex;
+.string p {
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 div.this, div.invitation {
@@ -72,11 +74,17 @@ h1.yours {
     text-align: left;
 }
 
-h2 {
+.date h2 {
     font-family: 'PT Sans';
-    font-size: 20px;
+    font-size: 30px;
     padding: 1%;
     text-align: center;
+}
+
+.kitty {
+    display: flexbox;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 @keyframes fadeIn {
@@ -103,8 +111,9 @@ h2 {
 
 
 p, .address {
-    font-size: 24px; /* for .address it was 14px before */
+    font-size: 18px; /* for .address it was 14px before */
     margin-top: 20px;
+    color: #666;
 }
 
 .content {
@@ -125,6 +134,12 @@ p, .address {
     border-radius: 8px;
 }
 
+p.event-info {
+    font-family: 'PT Sans';
+    font-size: 24px;
+    color: #666;
+}
+
 .info {
     font-family: 'PT Sans';
     max-width: 500px;
@@ -133,7 +148,8 @@ p, .address {
 
 .info h3, .gift h3 {
     font-family: 'PT Sans';
-    color: #6A5ACD;
+    font-size: 24px;
+    color: #000000;
 }
 
 #modal {
@@ -176,6 +192,7 @@ p, .address {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    align-items: center;
 }
 
 .confirmation {
