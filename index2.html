@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <link rel="stylesheet" href="style2.css">
+    <script>src="script.js"</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dasha's Birthday</h1>
+            <nav>
+                <ul>
+                    <a href="#how-it-goes">Как все пройдет?</a>
+                </ul>
+                <ul>
+                    <a href="#gifts">Подарки</a>
+                </ul>
+            </nav>
+        </div>
+        <button href="#applying" id="button-toggle-form" onclick="toggleForm()">Я буду!</button>
+    </header>
+
+    <section id="invitation">
+        <div class="container">
+            <h2>ЭТО ТВОЕ ПРИГЛАШЕНИЕ</h2>
+        </div>
+    </section>
+
+    <section id="how-it-goes" class="container">
+        <h2>Как все пройдет?</h2>
+        <div class="events" id="how-it-goes">
+            <div class="event">
+                <img src="hobby2.jpeg" alt="Master Class">
+                <div>
+                    <h3>Мастер-класс</h3>
+                    <p>31 августа 15:00. Адрес будет позже. Соберемся для совместного творчества, ниже будут занятия на выбор.</p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="squash.webp" alt="Squash">
+                <div>
+                    <h3>Сквош</h3>
+                    <p>1 сентября 12:40</p>
+                    <p>Спортивный клуб October, г. Санкт-Петербург, Октябрьская набережная 6В</p>
+                    <p>Я подготовила два корта, тренера и нужное оборудование, а вы возьмите хорошее настроение и немного знаний про правила сквоша</p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="squash2.webp" alt="Table Talk">
+                <div>
+                    <h3>Тайм-аут</h3>
+                    <p>1 сентября 16:00</p>
+                    <p>Спортивный клуб October, г. Санкт-Петербург, Октябрьская набережная 6В</p>
+                    <p>Немного отдохнем, перекусим и приведем себя в порядок после игры, а также обсудим, кто стал лучшей ракеткой дня</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="container">
+        <div>
+            <img src="palette.jpg" alt="palette">
+        </div>
+        <h2>Немного правил</h2>
+        <p>Я буду очень благодарна, если вы учтете мою просьбу, чтобы наши фото были более красочные. Важно: на относится к спортивной одежде. Я добавила палитру, которой прошу придерживаться. Пожалуйста, если вам не удастся подобрать что-то подходящее, постарайтесь избежать очень ярких цветов: красного, черного, ярко-оранжевого и подобных.</p>
+    </section>
+
+    <section id="applying" class="container">
+        <form id="rsvp-form" class="hidden">
+            <p>Подтвердите свое присутствие!</p>
+            <button type="submit">Я буду!</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Save the date!</p>
+            <p>Saint-Petersburg</p>
+            <p>Contact: +79123456789</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
